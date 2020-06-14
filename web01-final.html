@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>期末课业</title>
+	
+	<style>
+	*{
+		padding:0;
+		margin:0;
+	}
+	a{
+		text-decoration:none;
+	}
+	li{
+		list-style:none;
+	}
+	body{
+		background-color:#f3f5f7;
+	}
+	.total{
+		margin:0 auto;
+		width:1200px;
+	}
+	.before{
+		height:58px;
+		background:rgba(255,255,255,1);
+		box-shadow:0px 0px 25px 0px rgba(118,118,118,0.5);
+	}
+
+	.logo {
+		display: inline-block;
+		position:absolute;
+		float:left;
+		width:100px;
+		height:58px;
+		padding-left:87px;
+	}
+	.search{
+		height: 60px;
+		width: 200px;
+		display: inline-block;
+	}
+	#sit{
+		position:absolute;
+		float:left;
+		width:60px;
+		height:40px;
+		border:1px solid rgba(255,140,0,1);
+		font:400 14px Microsoft YaHei;
+		color:#000;
+		line-height:31px;
+		margin-top:10px;
+		margin-left:260px;
+	}
+	.search .form01 input{
+		position:absolute;
+		float:left;
+		width:170px;
+		height:38px;
+		border:1px solid rgba(255,140,0,1);
+		font:400 14px Microsoft YaHei;
+		color:#000;
+		line-height:31px;
+		margin:10px 0 0 319px;
+		padding-left:21px;
+	}
+	.search .form02 input{
+		position:absolute;
+		float:left;
+		width:40px;
+		height:40px;
+		border:1px solid rgba(255,140,0,1);
+		font:400 14px Microsoft YaHei;
+		color:#000;
+		margin:10px 0 0 492px;
+	}
+	.nav01{
+		
+		float:right;
+		padding:5px 0 0 0px;
+		margin:15px 40px 0 0px;
+	}
+	.nav01 ul li{
+		float:left;
+		margin:0 10px;
+	}
+	.nav01 ul li a{
+		display:block;
+		padding:0 25px;
+		height:40px;
+		line-height:40px;
+		font:900 18px Microsoft YaHei;
+		color:rgba(5,5,5,1);
+	}
+	.nav01 a:hover{
+		border-bottom:3px solid rgba(255,140,0,1);
+	}
+	.user{
+		float:right;
+		padding:20px 100px 0 0px;
+		
+	}
+	.user ul{
+		float:right;
+	}
+	.user ul li{
+		float:right;
+		display:block;
+		padding:0 25px;
+		height:40px;
+		line-height:40px;
+		font:600 16px Microsoft YaHei;
+		color:#6B74E6;
+	}
+	.banner{
+		margin:0 auto;
+		width:1200px;
+		height:300px;
+	}
+	.banner .banner02{
+		position:absolute;
+		float:left;
+		width:700px;
+		height:7px;
+		padding-left:178px;
+	}
+	.banner .nav02{
+		position:relative;
+		margin:30px 0 30px 0;
+		width:180px;
+		height:270px;
+		line-height:40px;
+	}
+	.banner .nav02 ul li{
+		display:block;
+		height:80px;
+		line-height:50px;
+		font:400 16px Microsoft YaHei;
+		color:#6B74E6;
+	}
+	.nav02 ul li a{
+		display:block;
+		padding:0 15px;
+		height:40px;
+		line-height:40px;
+		font:900 18px Microsoft YaHei;
+		color:rgba(5,5,5,1);
+	}
+	.nav02 a:hover{
+		color:rgba(255,255,255);
+		border-bottom:3px solid rgba(255,140,0,1);
+		background:rgba(255,140,0,1);
+	}
+	.banner .form03{
+		position:absolute;
+		margin:30px 0 0 850px;
+		border:3px solid #f2f2f5;
+		box-shadow:0px 0px 25px 0px rgba(118,118,118,0.5);
+		padding:10px;
+	}
+	.form03 table tr td{
+		height:20px;
+		font:600 30px Microsoft YaHei;
+		color:darkorange;
+	}
+	.then{
+		width:946px;
+		height:66px;
+		background:rgba(255,255,255,1);
+		box-shadow:0px 2px 3px 0px rgba(118,118,118,0.2);
+		margin:10px 0 0 120px;
+		line-height:10px;	
+	}
+	.then01{
+		height:40px;
+		margin-left:120px;
+	}
+	.then h1{
+		float:left;
+		margin-left:226px;
+		font:400 36px Microsoft YaHei;
+		color:darkorange;
+		line-height:53px;
+	}
+	.text{
+		position:relative;
+		float:left;
+		margin-left:300px;
+		width:800px;
+		height:153px;
+	}
+	.show{
+		width:1100px;
+	}
+	.show01{
+		position:absolute;
+		line-height:445px;
+		float:left;
+		width:650px;
+	}
+	.show02{
+		position:absolute;
+		line-height:445px;
+		float:left;
+		width:650px;
+		margin:19px 0 0 562px;
+	}
+	.text01{
+		float:left;
+		width:650px;
+		height:288px;
+		margin-top:20px;
+	}
+	.text02{
+		float:left;
+		width:776px;
+		height:288px;
+		margin-top:15px;
+	}
+	.text03{
+		float:left;
+		width:289px;
+		height:289px;
+		margin:15px 5px 0 0;
+	}
+	.text04{
+		float:left;
+		width:289px;
+		height:289px;
+		margin:15px 5px 0 0;
+	}
+	.text05{
+		float:left;
+		width:289px;
+		height:289px;
+		margin-right:5px;
+	}
+	.text06{
+		float:left;
+		width:289px;
+		height:289px;
+		margin-right:10px;
+	}
+	.text011 .text0111{
+		position:absolute;
+		line-height:460px;
+		padding-left:40px;
+		font-size:21px;
+		font-family:Microsoft YaHei;
+		font-weight:800;
+		color:rgba(5,5,5,1);
+	}
+	.text011 .text0112{
+		position:absolute;
+		line-height:527px;
+		padding-left:115px;
+		font-size:17px;
+		font-family:Microsoft YaHei;
+		font-weight:800;
+		color:rgba(5,5,5,1);
+	}
+	.text031 .text0311{
+		position:absolute;
+		line-height:1070px;
+		padding-left:20px;
+		font-size:21px;
+		font-family:Microsoft YaHei;
+		font-weight:800;
+		color:rgba(5,5,5,1);
+	}
+	.text031 .text0312{
+		position:absolute;
+		line-height:1130px;
+		padding-left:18px;
+		font-size:17px;
+		font-family:Microsoft YaHei;
+		font-weight:800;
+		color:rgba(5,5,5,1);
+	}
+	.text041 .text0411{
+		position:absolute;
+		line-height:1070px;
+		padding-left:303px;
+		font-size:21px;
+		font-family:Microsoft YaHei;
+		font-weight:800;
+		color:rgba(255,255,255,1);
+	}
+	.text041 .text0412{
+		position:absolute;
+		line-height:1130px;
+		padding-left:317px;
+		font-size:17px;
+		font-family:Microsoft YaHei;
+		font-weight:800;
+		color:rgba(255,255,255,1);
+	}
+	.text051 .text0511{
+		position:absolute;
+		line-height:430px;
+		padding-left:30px;
+		font-size:21px;
+		font-family:Microsoft YaHei;
+		font-weight:800;
+		color:rgba(255,255,255,1);
+	}
+	.text051 .text0512{
+		position:absolute;
+		line-height:490px;
+		padding-left:50px;
+		font-size:17px;
+		font-family:Microsoft YaHei;
+		font-weight:800;
+		color:rgba(255,255,255,1);
+	}
+	.text061 .text0611{
+		position:absolute;
+		line-height:430px;
+		padding-left:320px;
+		font-size:21px;
+		font-family:Microsoft YaHei;
+		font-weight:800;
+		color:rgba(5,5,5,1);
+	}
+	.text061 .text0612{
+		position:absolute;
+		line-height:490px;
+		padding-left:340px;
+		font-size:17px;
+		font-family:Microsoft YaHei;
+		font-weight:800;
+		color:rgba(5,5,5,1);
+	}
+	.text021 .text0211{
+		position:absolute;
+		line-height:1040px;
+		padding-left:40px;
+		font-size:21px;
+		font-family:Microsoft YaHei;
+		font-weight:800;
+		color:rgba(5,5,5,1);
+	}
+	.text021 .text0212{
+		position:absolute;
+		line-height:1100px;
+		padding-left:75px;
+		font-size:17px;
+		font-family:Microsoft YaHei;
+		font-weight:800;
+		color:rgba(5,5,5,1);
+	}
+	.doctor{
+		width:946px;
+		height:66px;
+		background:rgba(255,255,255,1);
+		box-shadow:0px 2px 3px 0px rgba(118,118,118,0.2);
+		margin:680px 120px 0 120px;
+		line-height:1110px;	
+	}
+	.doctor01{
+		float:left;
+		width:946px;
+		height:40px;
+		margin:0 auto;
+		line-height:1110px;
+	}
+	.doctor01 h1{
+		float:left;
+		margin-left:376px;
+		font:400 36px Microsoft YaHei;
+		color:darkorange;
+		line-height:53px;
+	}
+	.doctor02{
+		float:left;
+		margin-left:50px;
+	}
+	.doctor02 ul{
+		width:1120px;
+	}
+	.doctor02 .clear ul li{
+		float:left;
+		width:228px;
+		height:430px;
+		background:rgba(255,255,255,1);
+		box-shadow:0px 2px 5px 0px rgba(118,118,118,0.5);
+		margin:40px 20px 15px 20px;
+	}
+	.doctor02 .clear ul li img{
+		width:100%;
+	}
+	.doctor02 .clear ul li p{
+		width:185px;
+		height:36px;
+		font:400 14px Microsoft YaHei;
+		color:rgba(5,5,5,1);
+		line-height:20px;
+		margin:0 20px 18px 23px;
+	}
+	.doctor02 .clear .learn01{
+		float:left;
+		width:228px;
+		height:130px;
+		font-size:12px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		color:#999999;
+		background:rgba(255,255,255,1);
+	}
+	.doctor02 .clear .learn01 span{
+		margin:20px 0 0 20px;
+		font:800 19px Microsoft YaHei;
+		color:rgba(5,5,5,1);
+	}
+	.doctor02 .clear .learn02{
+		float:left;
+		width:228px;
+		height:130px;
+		font-size:12px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		color:#999999;
+		background:rgba(255,255,255,1);
+	}
+	.doctor02 .clear .learn02 span{
+		margin:20px 0 0 20px;
+		font:800 19px Microsoft YaHei;
+		color:rgba(5,5,5,1);
+	}
+	.doctor02 .clear .learn03{
+		float:left;
+		width:228px;
+		height:130px;
+		font-size:12px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		color:#999999;
+		background:rgba(255,255,255,1);
+	}
+	.doctor02 .clear .learn03 span{
+		margin:20px 0 0 20px;
+		font:800 19px Microsoft YaHei;
+		color:rgba(5,5,5,1);
+	}
+	.later{
+		width:100%;
+	}
+	.later01{
+		width:966px;
+		height:66px;
+		background:rgba(255,255,255,1);
+		box-shadow:0px 2px 3px 0px rgba(118,118,118,0.2);
+		margin:500px 360px 0 120px;
+		line-height:1110px;	
+	}
+	.later011{
+		float:left;
+		height:40px;
+		margin:0 auto;
+		line-height:1110px;
+	}
+	.later011 h1{
+		float:left;
+		margin-left:250px;
+		font:400 36px Microsoft YaHei;
+		color:darkorange;
+		line-height:53px;
+	}
+	.after{
+		position:absolute;
+		float:left;
+		width:700px;
+		height:526px;
+		background:rgba(255,255,255,1);
+		box-shadow:0px 2px 25px 0px rgba(118,118,118,0.6);
+		margin:20px 0 10px 20px;
+	}
+	.after .title p{
+		font:400 36px Microsoft YaHei;
+		color:darkorange;
+		margin:10px 0 5px 90px;
+	}
+	.after .context ul li{
+		float:left;
+		font-size:19px;
+		font-family:Microsoft YaHei;
+		font-weight:800;
+		color:rgba(255,255,255,1);
+		margin:10px 0 5px 25px;
+		line-height:30px;
+	}
+	.after .context ul li p a{
+		display:block;
+		padding:0 25px;
+		height:40px;
+		font:900 18px Microsoft YaHei;
+		color:rgba(5,5,5,1);
+	}
+	.context a:hover{
+		border-bottom:3px solid rgba(255,140,0,1);
+	}
+	.after01{
+		position:absolute;
+		float:left;
+		width:415px;
+		height:526px;
+		background:rgba(255,255,255,1);
+		box-shadow:0px 2px 25px 0px rgba(118,118,118,0.6);
+		margin:20px 10px 10px 750px;
+	}
+	.after01 .title01 p{
+		font:400 36px Microsoft YaHei;
+		color:darkorange;
+		margin:10px 0 10px 90px;
+	}
+	.after01 .context01 ul li{
+		float:left;
+		font-size:19px;
+		font-family:Microsoft YaHei;
+		font-weight:800;
+		color:rgba(255,255,255,1);
+		margin:20px 0 5px 25px;
+		line-height:30px;
+	}
+	.after01 .context01 ul li p a{
+		display:block;
+		padding:0 25px;
+		height:40px;
+		font:900 18px Microsoft YaHei;
+		color:rgba(5,5,5,1);
+	}
+	.after01 .context01 a:hover{
+		border-bottom:3px solid rgba(255,140,0,1);
+	}
+	.last{
+		width:1200px;
+		height:317px;
+		margin-top:600px;
+		background:#FFF;
+	}
+	.last .left{
+		float:left;
+		padding-left:97px;
+	}
+	.last .left img{
+		width:137px;
+		padding-top:60px;
+	}
+	.left01{
+		font-size:17px;
+		font-family:Microsoft YaHei;
+		font-weight:900;
+		color:rgba(5,5,5,1);
+		padding-bottom:10px;
+	}
+	.app{
+		color:rgba(0,164,255,1);
+		width:63px;
+		height:15px;
+		border:1px solid #FF8C00;
+		background:darkorange;
+		font:400 17px Microsoft YaHei;
+		color:rgba(255,255,255,1);
+		padding:16px 25px 18px 25px;
+		text-align:center;
+		line-height:80px;
+	}
+	.last .right01{
+		position:absolute;
+		width:400px;
+		float:left;
+		margin-left:357px;
+	}
+	.right01 p{
+		width:85px;
+		height:17px;
+		font:600 21px Microsoft YaHei;
+		color:rgba(51,51,51,1);
+		line-height:21px;
+		margin:60px 0 10px 155px;
+	}
+	.right01 ul li a{
+		float:left;
+		width:155px;
+		margin:10px 0 0 155px;
+	}
+	.last .right02{
+		position:absolute;
+		width:115px;
+		float:left;
+		margin-left:757px;
+	}
+	.right02 p{
+		width:85px;
+		height:17px;
+		font:600 21px Microsoft YaHei;
+		color:rgba(51,51,51,1);
+		line-height:21px;
+		margin:60px 0 10px 0;
+	}
+	.right02 ul li a{
+		float:left;
+		width:155px;
+		margin-top:12px;
+	}
+	.last .right03{
+		position:absolute;
+		width:115px;
+		float:left;
+		margin-left:957px;
+	}
+	.right03 p{
+		width:85px;
+		height:17px;
+		font:600 21px Microsoft YaHei;
+		color:rgba(51,51,51,1);
+		line-height:21px;
+		margin:60px 0 10px 0;
+	}
+	.right03 ul li a{
+		float:left;
+		width:155px;
+		margin-top:12px;
+	}
+	</style>
+</head>
+<body>
+	<div class="total">
+	<div class="before">
+		<img src="./img/logo.png" alt="抗疫快报" class="logo">
+		
+		<div class="search ">
+			<select name="sit" id="sit" >
+				<option value="overworld">全球</option>
+				<option value="Wuhan">中国武汉</option>
+				<option value="jilin">中国吉林</option>
+				<option value="America">美国</option>
+				<option value="Cuba">巴西</option>
+				<option value="Russia">俄罗斯</option>
+				<option value="India">印度</option>
+				<option value="other">其他地区</option>
+			</select>
+			<form class="form01">
+				<input type="text" value="输入关键字" name="输入关键字">
+			</form>
+			<form class="form02">
+				<input type="submit" value="搜索" style="background-color:darkorange"/>
+			</form>
+		</div>
+		<div class="user">
+			<ul>
+					<li>
+						<a href="#">登录</a>
+					</li>
+					<li>
+						<a href="#">注册</a>
+					</li>
+				</ul>
+		</div>
+		<div class="nav01">
+			<ul class="clear">
+				<li>
+					<a href="https://3g.163.com/news/article/FEU7S59D05149TAF.html?from=history-back-list">国内疫情</a>
+				</li>
+				<li>
+					<a href="https://new.qq.com/rain/a/20200428A09ZPA00">国外疫情</a>
+				</li>
+				<li>
+					<a href="https://baijiahao.baidu.com/s?id=1667536363846125552&wfr=spider&for=pc">国外疫情</a>
+				</li>
+			</ul>
+		</div>
+		
+	</div>
+	<div class="banner">
+		<div class="form03">
+			<form action="http://www.baidu.com" method="get">
+			<h2 align="center">注册/登录</h2>
+            <table>
+                <tr> 
+                    <td>用户名：</td>
+                    <td>
+                        <input type="password" name="password1"/>
+                    </td> 
+                </tr>
+                <tr> 
+                    <td>密码：</td>
+                    <td>
+                        <input type="password" name="password2"/>
+                    </td> 
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="&nbsp&nbsp&nbsp注册&nbsp&nbsp&nbsp" />
+                        <input type="submit" value="&nbsp&nbsp&nbsp登录&nbsp&nbsp&nbsp" />
+                    </td>
+               </tr>
+            </table>
+            </form>
+        </div>
+		<div class="banner02">
+			<img src="./img/banner.png" alt="齐心抗疫">
+		</div>
+		<div class="nav02">
+			<ul>
+				<li>
+					<a href="#">疫情中的医护人员</a>
+				</li>
+				<li>
+					<a href="#">疫情中的警察</a>
+				</li>
+				<li>
+					<a href="#">疫情中的志愿者</a>
+				</li>
+				<li>
+					<a href="#">疫情中的餐饮人员</a>
+				</li>
+			</ul>
+		</div>
+    </div>
+	<div class="then">
+		<div class="then01">
+		<h1 align="center">大事件摘要</h1>
+	    </div>
+	</div>
+	<div class="show">
+	    <ul>
+		    <div class="show01">
+		    <li>
+					<div class="text01">
+					<a href="#"><img src="./img/011.png" alt="志愿请战书"></a>
+				    </div>
+				    <div class="text011">
+				    	<p class="text0111">	"不畏生死，不计报酬"</p>
+				    	<p class="text0112">
+				    	——疫情期间，医护人员的责任与担当！</p>
+				    </div>
+		    </li>
+		        
+				<li>
+					<div class="text04">
+					<a href="#"><img src="./img/015.png" alt="最美的印痕"></a>
+				    </div>
+				    <div class="text041">
+				    	<p class="text0411">
+				    	口罩下的面孔
+				    </p>
+				        <p class="text0412">
+				        ——参与抗疫留下的深刻印迹
+				    </p>
+				    </div>
+				</li>
+				<li>
+					<div class="text03">
+					<a href="#"><img src="./img/014.png" alt="钟南山连夜奔赴前线"></a>
+				    </div>
+				    <div class="text031">
+				    	<p class="text0311">
+				    	钟南山院士
+				    </p>
+				        <p class="text0312">
+				        ——临危受命，最美逆行者
+				    </p>
+				    </div>
+				</li>
+			</div>
+			<div class="show02">
+				<li>
+					<div class="text05">
+					<a href="#"><img src="./img/012.png" alt="大学生志愿者"></a>
+				    </div>
+				    <div class="text051">
+				    	<p class="text0511">
+				    	大学生志愿者
+				    </p>
+				        <p class="text0512">
+				        ——在疫情中绽放青春的光
+				    </p>
+				    </div>
+				</li>
+				<li>
+					<div class="text06">
+					<a href="#"><img src="./img/013.png" alt="疫情志愿送餐哥"></a>
+				    </div>
+				    <div class="text061">
+				    	<p class="text0611">
+				    	志愿送餐哥
+				    </p>
+				        <p class="text0612">
+				        ——以己之力，解他人之需
+				    </p>
+				    </div>
+				</li>
+				<li>
+					<div class="text02">
+					<a href="#"><img src="./img/016.png" alt="火神山医院的建设"></a>
+					</div>
+					<div class="text021">
+				    	<p class="text0211">
+				    	9天建成火神山医院
+				    </p>
+				        <p class="text0212">
+				        ——全世界叹为观止的中国奇迹力量
+				    </p>
+				    </div>
+				</li>
+			</div>
+			</ul>
+	</div>
+	<div class="doctor">
+		<div class="doctor01">
+		<h1 align="center">优秀院士</h1>
+	    </div>
+	</div>
+	<div class="doctor02">
+	    <div  class="clear">
+		<ul>
+			<li>
+				<img src="./img/02.png" alt="优秀院士">
+				<div class="learn01">
+				<span>
+					这些优秀院士
+				</span>
+				<p>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp在疫情期间他们做出过重要贡献！他们挽救了大批百姓的性命。
+				</p>
+				</div>
+			</li>
+			<li>
+				<img src="./img/021.png" alt="钟南山院士">
+				<div class="learn02">
+				<span>
+					钟南山院士
+				</span>
+				<p>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp率先提出了人传人的警告，并多次苦口婆心劝说国民注意洗手，待在家里，也提出氯喹有效，但多次提出新冠肺炎没有特效药。
+				</p>
+				</div>
+			</li>
+			<li>
+				<img src="./img/022.png" alt="钟南山院士">
+				<div class="learn03">
+				<span>
+					李兰娟院士
+				</span>
+				<p>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp疫情初期就自动请缨组建了团队赴武汉，提出了要将武汉封城。
+				</p>
+				</div>
+			</li>
+			<li>
+				<img src="./img/023.png" alt="钟南山院士">
+				<div class="learn03">
+				<span>
+					王辰院士
+				</span>
+				<p>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp最早提出建立方舱医院，并提出在方舱医院重点收治确诊的新冠肺炎轻症患者的建议，解决当下定点医院收治容量有限的问题。
+				</p>
+				</div>
+			</li>
+		</ul>
+		</div>
+	</div>
+	<div class="later">
+		<div class="later01">
+			<div class="later011">
+				<h1 align="center">防控疫情，那些你必须知道的事</h1>
+	        </div>
+	    </div>
+		<div class="after">
+			<div class="title">
+			<p>防疫知识宣传栏</p>
+		    </div>
+		    <div class="context">
+		    	<ul>
+		    		<li>
+						<p>
+							<a href="#">&gt;&nbsp&nbsp[公众个人篇]</a>
+							<a href="https://www.sohu.com/a/375431999_120059447">关于健康监测你要知道的事</a>
+						</p>
+					</li>
+					<li>
+						<p>
+						<a href="#">|&nbsp&nbsp&nbsp&gt;&nbsp&nbsp[口罩篇]</a>
+						<a href="https://www.sohu.com/a/375431999_120059447">关于正确使用口罩你要知道的事</a>
+					</p>
+					</li>
+					<li>
+						<p>
+							<a href="#">&gt;&nbsp&nbsp[普通家庭篇]</a>
+							<a href="https://www.sohu.com/a/375431999_120059447">关于日常清洁你要知道的事</a>
+						</p>
+					</li>
+					<li>
+						<p>
+							<a href="#">|&nbsp&nbsp&nbsp&gt;&nbsp&nbsp[消毒篇]</a>
+							<a href="https://www.sohu.com/a/375431999_120059447">关于预防性消毒你要知道的事</a>
+						</p>
+					</li>
+					<li>
+						<p>
+							<a href="#">&gt;&nbsp&nbsp[事业单位篇]</a>
+							<a href="https://www.sohu.com/a/375431999_120059447">关于参加会议你要知道的事</a>
+						</p>
+					</li>
+					<li>
+						<p>
+							<a href="#">|&nbsp&nbsp&nbsp&gt;&nbsp&nbsp[洗手篇]</a>
+							<a href="https://www.sohu.com/a/375431999_120059447">关于正确洗手你要知道的事</a>
+						</p>
+					</li>
+					<li>
+						<p>
+							<a href="#">&gt;&nbsp&nbsp[公共场所篇]</a>
+							<a href="https://www.sohu.com/a/375431999_120059447">关于限制聚集你要知道的事</a>
+						</p>
+					</li>
+					<li>
+						<p>
+							<a href="#">|&nbsp&nbsp&nbsp&gt;&nbsp&nbsp[就医篇]</a>
+							<a href="https://www.sohu.com/a/375431999_120059447">关于正确就医你要知道的事</a>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="after01">
+			<div class="title01">
+			<p>疫情防控辟谣专区</p>
+		    </div>
+		    <div class="context01">
+		    	<ul>
+		    		<li>
+		    			<p>
+						<a href="#">&gt;&nbsp&nbsp&nbsp[谣言]</a>
+						<a href="https://www.sohu.com/a/375431999_120059447">用漂白剂洗果蔬可以预防新冠病毒&nbsp&nbsp&nbsp</a>
+					</p>
+					</li>
+					<li>
+						<p>
+							<a href="#">&gt;&nbsp&nbsp&nbsp[谣言]</a>
+							<a href="https://www.sohu.com/a/375431999_120059447">刮风下雨对新冠病毒的传播有促进作用&nbsp&nbsp&nbsp</a>
+						</p>
+					</li>
+					<li>
+						<p>
+							<a href="#">&gt;&nbsp&nbsp&nbsp[辟谣]</a>
+							<a href="https://www.sohu.com/a/375431999_120059447">鸡屎藤能预防新冠病毒&nbsp&nbsp&nbsp</a>
+						</p>
+					</li>
+					<li>
+						<p>
+							<a href="#">&gt;&nbsp&nbsp&nbsp[事实]</a>
+							<a href="https://www.sohu.com/a/375431999_120059447">低风险地区校园内学生不需佩戴口罩&nbsp&nbsp&nbsp</a>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+	<div class="last">
+		<div class="left">
+				<img src="./img/logo.png" alt="抗疫快报">
+				<p class="left01">联手抗疫，相伴关注疫情前线最新新闻。</p>
+				<p class="left02">
+				投稿电话：8888 666666</p>
+				<a href="#" class="app">点击下载手机端APP</a>
+	    </div>
+	    <div class="right01">
+	    	<p>关于本报</p>
+					<ul>
+						<li>
+						<a href="#">帮助</a>
+					</li>
+					<li>
+						<a href="#">管理团队</a>
+					</li>
+					<li>
+						<a href="#">工作机会</a>
+					</li>
+					<li>
+						<a href="#">客户服务</a>
+					</li>
+					<li>
+						<a href="#">用户协议</a>
+					</li>
+					</ul>
+	    </div>
+	    <div class="right02">
+	    	<p>新手指南</p>
+					<ul>
+						<li>
+						<a href="#">如何注册</a>
+					</li>
+					<li>
+						<a href="#">忘记密码</a>
+					</li>
+					<li>
+						<a href="#">如何投稿</a>
+					</li>
+					<li>
+						<a href="#">客户服务</a>
+					</li>
+					<li>
+						<a href="#">在线留言</a>
+					</li>
+					</ul>
+		</div>
+		<div class="right03">
+			<p>合作伙伴</p>
+		<ul>
+			<li>
+				<a href="#">合作机构</a>
+			</li>
+			<li>
+				<a href="#">合作伙伴</a>
+			</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>
